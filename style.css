@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  background-color: wheat;
+}
+.board {
+  position: relative;
+  width: 330px;
+  height: 245px;
+  margin: 100px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#board {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 48px);
+  grid-template-rows: repeat(3, 80px);  
+  justify-content: space-between;
+  width: 320px;  
+  height: 240px;  
+  padding: 5px;
+  padding-bottom: 0;
+}
+#coment {
+  position: absolute;
+  top: 50px;
+  left: 5px;
+  right: 5px;
+}
+#coment p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 32px;
+}
+#coment.hide {
+  display: none;
+}
+#board div {
+  width: 48px;
+  height: 75px;
+  background-color: rosybrown;
+  border-radius: 4px;
+}
+#board img {
+  padding: 3px;
+  display: block;
+  width: 42px;
+  height: 69px;
+  border-radius: 4px;
+  opacity: 1;
+}
+#board img.hide {
+  opacity: 0;
+}
+.home {
+  position: absolute;
+  top: -48px;
+  right: 4px;
+  background-color: #e4e4e4;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  vertical-align: bottom;
+}
+.home a {
+  display: block;
+  text-decoration: none;
+  color: #0a0a0a;
+  font-size: 24px;
+  text-align: center;
+  line-height: 32px;
+}
+.home span {
+  line-height: 32px;
+}
+.text {
+  position: absolute;
+  top: 8px;
+  right: -12px;
+  font-size: 12px;
+  width: 80px;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none; 
+}
+.home:hover .text {
+  opacity: 1;
+}
+.home:hover span {
+  opacity: 0.3;
+}
