@@ -36,6 +36,8 @@
     "img/taionkei.png", 
     "img/usi.png", 
     "img/usi.png", 
+    "img/badminton.png", 
+    "img/badminton.png", 
   ];
   function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
@@ -120,7 +122,7 @@
     }
     addCorrectCount() {
       this.correctCount++;
-      if (this.correctCount === 9) {
+      if (this.correctCount === 10) {
         this.gameComplete();
       }
     }
